@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <title>ぽんこつガリバートンネル</title>
+    <meta name="viewport" content="width=300">
 </head>
 
 <body>
@@ -16,11 +18,12 @@
 	</form>
         <p><font size="2">出口：</font></p>
             {% if num | random == 0 %}
-                <p style="font-size:20%; margin-top:0%">{{name}}さん</p>
+                <p style="font-size:30%; margin-top:0%">{{name}}さん</p>
             {% elif num | random == 1 %}
                 <p style="font-size:800%; margin-top:-3%">{{name}}さん</p>
             {% else %}
                 <p style="font-size:800%; margin-top:-3%">{{name}}さん</p>
         {% endif %}
 </body>
+
 </html>
