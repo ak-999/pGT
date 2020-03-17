@@ -1,11 +1,6 @@
-FROM python:3.7
-USER root
-WORKDIR /home/username
+FROM ubuntu:latest
 
 RUN apt-get update
-RUN apt-get install -y vim
-RUN pip install requests==2.18.4 click==6.7
+RUN apt-get install python3 python3-pip -y
 
-ENV LANG ja_JP.UTF-8
-ENV LANGUAGE ja_JP:ja
-ENV LC_ALL ja_JP.UTF-8
+RUN pip3 install flask
